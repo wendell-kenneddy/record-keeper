@@ -1,0 +1,13 @@
+.unstyled {
+  color: inherit;
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
