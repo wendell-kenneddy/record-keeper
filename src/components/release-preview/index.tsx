@@ -27,8 +27,10 @@ export function ReleasePreview({
     <Stack
       gap="xs"
       pl="xs"
+      pb="md"
+      pt="md"
       align="flex-start"
-      style={{ borderLeft: "4px solid var(--mantine-color-text)" }}
+      style={{ borderLeft: "4px solid var(--mantine-color-teal-6)" }}
     >
       <Title order={3}>
         <Link href={`/releases/${id}`} className={linkStyles.unstyled}>
@@ -41,7 +43,7 @@ export function ReleasePreview({
       </Title>
 
       <Group align="center">
-        {releaseType != "single" && <Text>{songCount} músicas</Text>}
+        {releaseType != "single" && <Text>{songCount} música(s)</Text>}
 
         <Group align="center" color="white" gap="xs">
           <Calendar size={16} />
