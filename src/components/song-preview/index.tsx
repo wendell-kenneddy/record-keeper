@@ -26,8 +26,10 @@ export function SongPreview({
     <Stack
       gap="xs"
       pl="xs"
+      pb="md"
+      pt="md"
       align="flex-start"
-      style={{ borderLeft: "4px solid var(--mantine-color-text)" }}
+      style={{ borderLeft: "4px solid var(--mantine-color-teal-6)" }}
     >
       <Title order={3}>
         <Link href={`/songs/${id}`} className={linkStyles.unstyled}>
@@ -36,13 +38,16 @@ export function SongPreview({
         por{" "}
         <Link href={`/artists/${artistId}`} className={linkStyles.unstyled}>
           {artist}
-        </Link>
+        </Link>{" "}
+        <Text component="span" fw="bold" size="xl" opacity={0.6}>
+          (Letra)
+        </Text>
       </Title>
 
       <Group align="center">
         <Text>
           De{" "}
-          <Link href={`/albums/${releaseId}`} className={linkStyles.unstyled}>
+          <Link href={`/releases/${releaseId}`} className={linkStyles.unstyled}>
             {release}
           </Link>
         </Text>
