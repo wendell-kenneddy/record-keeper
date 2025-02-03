@@ -26,8 +26,8 @@ export function SongPreview({
     <Stack
       gap="xs"
       pl="xs"
-      pb="md"
-      pt="md"
+      pb="xs"
+      pt="xs"
       align="flex-start"
       style={{ borderLeft: "4px solid var(--mantine-color-teal-6)" }}
     >
@@ -40,7 +40,7 @@ export function SongPreview({
           {artist}
         </Link>{" "}
         <Text component="span" fw="bold" size="xl" opacity={0.6}>
-          (Letra)
+          Letra
         </Text>
       </Title>
 

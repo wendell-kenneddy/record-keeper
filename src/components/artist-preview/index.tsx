@@ -11,8 +11,8 @@ export function ArtistPreview({ id, name }: ArtistPreviewProps) {
   return (
     <Stack
       pl="xs"
-      pb="md"
-      pt="md"
+      pb="xs"
+      pt="xs"
       align="flex-start"
       style={{ borderLeft: "4px solid var(--mantine-color-teal-6)" }}
     >
